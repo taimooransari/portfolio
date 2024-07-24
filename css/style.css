@@ -282,7 +282,8 @@ figure figcaption {
 }
 
 #colorlib-aside .colorlib-footer ul li a {
-  color: rgba(255, 255, 255, 0.3);
+  /* color: rgba(255, 255, 255, 0.9); */
+  color:  #2c98f0;
   padding: 4px;
 }
 
@@ -291,7 +292,7 @@ figure figcaption {
 #colorlib-aside .colorlib-footer ul li a:focus {
   text-decoration: none;
   outline: none;
-  color: #2c98f0;
+  color: #000;
 }
 
 .container-wrap {
@@ -315,12 +316,13 @@ figure figcaption {
 }
 
 #colorlib-hero {
-  min-height: 500px;
+  min-height: 450px;
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
+  margin-bottom: 1em;
   clear: both;
+
 }
 
 #colorlib-hero .flexslider {
@@ -748,6 +750,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
   color: #fff;
+
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
@@ -2010,13 +2013,48 @@ body.offcanvas .colorlib-nav-toggle {
   opacity: 0;
 }
 
+
+.second h1, .second h2{
+
+  color: black !important;
+  /*white shadow on text  */
+  text-shadow: 2px 2px 4px #ffff !important;
+
+
+}
+
 .first h1, .first h2{
   color: white !important;
-  /* display: none; */
+  
+/* black shadow */
+
+  text-shadow: 2px 2px 4px #dadada !important;
+
 }
 
 
+
+
 .first p, .first a{
-  color: white !important;
+
   font-weight: bolder !important;
+
+  
+}
+
+
+/* hide for mobile */
+@media screen and (max-width: 768px) {
+  .mob-hide {
+    display: none;
+  }
+}
+
+/* hide for tabs/laptop */
+
+@media screen and (min-width: 768px) {
+  .tab-hide {
+    display: none;
+
+  }
 }
