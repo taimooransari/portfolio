@@ -26,6 +26,7 @@ body {
   }
 }
 
+
 a {
   color: #2c98f0;
   -webkit-transition: 0.5s;
@@ -2056,5 +2057,65 @@ body.offcanvas .colorlib-nav-toggle {
   .tab-hide {
     display: none;
 
+  }
+}
+
+
+/* General styles */
+.colorlib-skills {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Skill category styling */
+.skill-category {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+}
+
+.skill-category h3 {
+  font-size: 1.8rem; /* Increased heading size */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category ul li {
+  font-size: 1.3rem; /* Larger font size for skills */
+  margin: 10px 0; /* Slightly more spacing between items */
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skill-category {
+      padding: 15px;
+  }
+
+  .skill-category h3 {
+      font-size: 1.6rem; /* Adjust heading size for mobile */
+  }
+
+  .skill-category ul li {
+      font-size: 1.2rem; /* Slightly reduced for smaller screens */
   }
 }
